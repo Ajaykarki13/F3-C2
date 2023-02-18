@@ -64,8 +64,9 @@ function orderPrep()
     setTimeout(()=>{
        
         const order={order_status:true,paid:false}
+        console.log(order)
             resolve(order)},1500)
-           
+          
     })
    }
 
@@ -78,6 +79,7 @@ function payOrder()
      setTimeout(()=>{
         
          const payment={order_status:true,paid:true}
+         console.log(payment)
              resolve(payment)},1000)
              
      })
